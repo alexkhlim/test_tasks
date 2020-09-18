@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 style="font-style: italic">Информация о книге:</h1><br>
+    <b>Название: </b>{{ book.titele }}<br>
+    <b>Автор: </b>{{ book.author}}<br>
+    <div class="alert alert-warning mt-2">
+    <b>Описание: </b>{{ book.description}}<br>
+    </div>
+
+{% endblock %}
