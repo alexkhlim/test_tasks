@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+        {% for book in books %}
+            <div class="alert alert-warning mt-2">
+            <a style="font-style: italic; font-size: 25px" href="{% url 'books' book.id %} ">Информация о книге:</a><br>
+            <b>Название: </b>{{ book.titele }}<br>
+            <b>Автор: </b>{{ book.author}}<br>
+            </div>
+        {% endfor %}
+{% endblock %}
